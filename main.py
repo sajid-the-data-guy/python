@@ -17,7 +17,7 @@ mocked_trades = [
         },
         "trader": "John Doe"
     },
-    # Add more mocked trades here...
+    
 ]
 
 
@@ -66,8 +66,6 @@ def search_trades(
         instrumentId: Optional[str] = Query(None, alias="instrumentId", description="Instrument ID"),
         trader: Optional[str] = Query(None, description="Trader")
 ):
-
-    # Your implementation
 
     results = []
     trader: Optional[str] = Field(description="The name of the Trader")
